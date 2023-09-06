@@ -13,7 +13,9 @@
     "docker:all": "pnpm run docker:build; pnpm run docker:run"
   },
   "dependencies": {
+    "@astrojs/preact": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
-    "astro": "^3.0.8"
+    "astro": "^3.0.8",
+    "preact": "^10.6.5"
   }
 }
