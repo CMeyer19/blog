@@ -9,19 +9,18 @@
     "preview": "astro preview",
     "astro": "astro",
     "docker:build": "docker build -f Dockerfile -t blog .",
-    "docker:run": "docker run --name blog-container -d -p 8000:80 blog",
-    "docker:all": "pnpm run docker:build; pnpm run docker:run"
+    "docker:run": "docker run --name blog-container -d -p 8080:80 blog",
+    "docker:all": "pnpm run docker:build; pnpm run docker:run",
+    "deploy": "flyctl deploy"
   },
-  "dependencies": {
+  "devDependencies": {
     "@astrojs/preact": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
+    "unocss": "^0.55.7",
     "@unocss/astro": "^0.55.7",
     "@unocss/preset-wind": "^0.55.7",
     "@unocss/reset": "^0.55.7",
     "astro": "^3.0.10",
     "preact": "^10.17.1"
-  },
-  "devDependencies": {
-    "unocss": "^0.55.7"
   }
 }
