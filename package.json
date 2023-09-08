@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "docker:build": "docker build -f Dockerfile -t blog .",
+    "docker:run": "docker run --name blog-container -d -p 8080:80 blog",
+    "docker:all": "pnpm run docker:build; pnpm run docker:run",
+    "deploy": "flyctl deploy"
+  },
+  "devDependencies": {
+    "@astrojs/preact": "^3.0.0",
+    "@astrojs/rss": "^3.0.0",
+    "astro": "^3.0.10",
+    "preact": "^10.17.1"
+  }
+}

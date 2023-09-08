@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Greeting from '../components/Greeting.jsx';
+
+const pageTitle = "Home Page";
+---
+
+<Layout title={pageTitle}>
+    <h2>My awesome blog subtitle</h2>
+    <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        color: white;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+</style>
