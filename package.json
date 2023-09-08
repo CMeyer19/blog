@@ -16,11 +16,11 @@
   "devDependencies": {
     "@astrojs/preact": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
-    "unocss": "^0.55.7",
     "@unocss/astro": "^0.55.7",
-    "@unocss/preset-wind": "^0.55.7",
+    "@unocss/preset-uno": "^0.55.7",
     "@unocss/reset": "^0.55.7",
-    "astro": "^3.0.10",
-    "preact": "^10.17.1"
+    "astro": "^3.0.11",
+    "preact": "^10.17.1",
+    "unocss": "^0.55.7"
   }
 }
