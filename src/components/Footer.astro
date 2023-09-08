@@ -1,7 +1,8 @@
 ---
-const platform = "github";
-const username = "withastro";
 import Social from './Social.astro';
+
+const platform = "github";
+const username = "CMeyer19";
 ---
 
 <footer class="flex items-center justify-between p-4">
@@ -9,7 +10,7 @@ import Social from './Social.astro';
 
     <div class="flex gap-4">
         <Social platform="twitter" username="astrodotbuild" />
-        <Social platform="github" username="withastro" />
+        <Social platform={platform} username={username} />
         <Social platform="youtube" username="astrodotbuild" />
     </div>
 </footer>
