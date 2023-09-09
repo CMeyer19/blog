@@ -42,8 +42,9 @@
 }
 
 html.dark {
-    background-color: #0d0950;
-    color: #fff;
+    --primary: black;
+    --text-color: white;
+    --accent: #D697FF;
 }
 
 .dark .nav-links a {
