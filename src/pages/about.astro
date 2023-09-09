@@ -19,15 +19,15 @@ const textCase = "uppercase";
 ---
 
 <Layout title={pageTitle}>
-    <article class="text-base prose xl:text-xl">
-        <h1>One</h1>
-        <h2 class="dark:bg-red bg-white">Two</h2>
-        <h3>Three</h3>
-        <p class="not-prose">
-            Some text
-        </p>
-    </article>
-    <h2>... and my new Astro site!</h2>
+    <!--<article class="text-base prose xl:text-xl">-->
+    <!--    <h1>One</h1>-->
+    <!--    <h2 class="dark:bg-red bg-white">Two</h2>-->
+    <!--    <h3>Three</h3>-->
+    <!--    <p class="not-prose">-->
+    <!--        Some text-->
+    <!--    </p>-->
+    <!--</article>-->
+    <h1 class="text-lg">... and my new Astro site!</h1>
 
     <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one
         I
@@ -58,11 +58,6 @@ const textCase = "uppercase";
 </Layout>
 
 <style define:vars={{skillColor, fontWeight, textCase}}>
-    h1 {
-        color: purple;
-        font-size: 4rem;
-    }
-
     .skill {
         color: var(--skillColor);
         font-weight: var(--fontWeight);

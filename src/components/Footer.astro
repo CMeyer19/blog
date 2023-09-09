@@ -1,16 +1,14 @@
 ---
 import Social from './Social.astro';
 
-const platform = "github";
-const username = "CMeyer19";
+const githubAccount = "https://github.com/CMeyer19";
 ---
 
 <footer class="flex items-center justify-between p-4">
-    <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <p>Learn more about my projects on <a href={githubAccount}>Github</a>!</p>
 
     <div class="flex gap-4">
-        <Social platform="twitter" username="astrodotbuild" />
-        <Social platform={platform} username={username} />
-        <Social platform="youtube" username="astrodotbuild" />
+        <Social title="LinkedIn" link="https://www.linkedin.com/in/cole-meyer-6179bbbb/"/>
+        <Social title="Github" link={githubAccount}/>
     </div>
 </footer>

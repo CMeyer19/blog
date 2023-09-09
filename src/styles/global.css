@@ -3,7 +3,7 @@
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #ff9776;
+    background-color: var(--accent);
     display: none;
     margin: 0;
 }
@@ -19,7 +19,7 @@
 }
 
 .nav-links a:hover, a:focus {
-    background-color: #ff9776;
+    background-color: var(--accent);
 }
 
 .expanded {

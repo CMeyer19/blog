@@ -1,5 +1,5 @@
 import {defineConfig} from 'astro/config';
-import UnoCSS from 'unocss/astro'
+import UnoCSS from 'unocss/astro';
 import preact from "@astrojs/preact";
 
 // https://astro.build/config
