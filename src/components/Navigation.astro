@@ -1,4 +1,19 @@
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
-<a href="/tags/">Tags</a>
+---
+import Hamburger from "./Hamburger.astro";
+---
+<div id="nav-container" class="flex gap-4 nav-links">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/tags/">Tags</a>
+</div>
+
+<Hamburger />
+
+<style>
+    @media only screen and (max-width: 636px) {
+        #nav-container {
+            display: none;
+        }
+    }
+</style>

@@ -11,7 +11,7 @@ const {title} = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8"/>
     <meta name="description" content="Astro description">
@@ -20,28 +20,31 @@ const {title} = Astro.props;
     <meta name="generator" content={Astro.generator}/>
     <title>{title}</title>
 </head>
-<body>
+<body class="h-full flex flex-col">
 <Header/>
+
 <h1>{title}</h1>
-<slot/>
+
+<div class="flex-1">
+    <slot/>
+</div>
+
 <Footer/>
-<script>
-    import "../scripts/menu.js";
-</script>
 </body>
 </html>
 <style is:global>
     :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
+        --primary: white;
+        --text-color: black;
+        --accent: #C264ff;
     }
 
     html {
         font-family: system-ui, sans-serif;
-        background: #13151A;
         background-size: 224px;
+
+        background: var(--primary);
+        color: var(--text-color);
     }
 
     code {

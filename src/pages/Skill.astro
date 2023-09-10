@@ -1,0 +1,16 @@
+---
+const fontWeight = "bold";
+const textCase = "uppercase";
+
+const {value} = Astro.props;
+---
+
+<li class="skill">{value}</li>
+
+<style define:vars={{fontWeight, textCase}}>
+    .skill {
+        color: var(--accent);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+    }
+</style>

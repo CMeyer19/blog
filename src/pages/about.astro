@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Layout from "../layouts/Layout.astro";
+import Skill from "./Skill.astro";
 
 const pageTitle = "About Me";
 const identity = {
@@ -13,13 +14,10 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = true;
 const goal = 3;
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "uppercase";
 ---
 
 <Layout title={pageTitle}>
-    <h2>... and my new Astro site!</h2>
+    <h1 class="text-lg">... and my new Astro site!</h1>
 
     <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one
         I
@@ -39,7 +37,7 @@ const textCase = "uppercase";
     <p>My skills are:</p>
     <ul>
         {skills.map((skill) =>
-                <li class="skill">{skill}</li>)}
+                <Skill value={skill}/>)}
     </ul>
 
     {happy && <p>I am happy to be learning Astro!</p>}
@@ -48,16 +46,3 @@ const textCase = "uppercase";
 
     {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </Layout>
-
-<style define:vars={{skillColor, fontWeight, textCase}}>
-    h1 {
-        color: purple;
-        font-size: 4rem;
-    }
-
-    .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-    }
-</style>

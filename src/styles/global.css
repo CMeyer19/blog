@@ -1,22 +1,9 @@
 /* nav styles */
-.hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-.hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #ff9776;
-}
-
 .nav-links {
     width: 100%;
     top: 5rem;
     left: 48px;
-    background-color: #ff9776;
+    background-color: var(--accent);
     display: none;
     margin: 0;
 }
@@ -32,7 +19,7 @@
 }
 
 .nav-links a:hover, a:focus {
-    background-color: #ff9776;
+    background-color: var(--accent);
 }
 
 .expanded {
@@ -52,15 +39,12 @@
         display: inline-block;
         padding: 15px 20px;
     }
-
-    .hamburger {
-        display: none;
-    }
 }
 
 html.dark {
-    background-color: #0d0950;
-    color: #fff;
+    --primary: black;
+    --text-color: white;
+    --accent: #D697FF;
 }
 
 .dark .nav-links a {
